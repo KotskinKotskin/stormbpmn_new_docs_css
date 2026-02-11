@@ -359,3 +359,31 @@ html {
   padding: 0.1em 0.3em;
   border-radius: 3px;
 }
+
+
+/*================== Отступы для третьего уровня вложенности ===================== */
+/* Базовый отступ для содержимого второго уровня  */
+.md-nav--primary .md-nav__item--section > .md-nav > .md-nav__list {
+  padding-left: 0.6rem;          /* или 0.8rem — небольшой отступ под заголовком раздела */
+}
+
+/* Главный отступ именно для третьего уровня (ссылки-страницы) */
+.md-nav--primary [data-md-level="3"] > .md-nav__list > .md-nav__item {
+  padding-left: 1.4rem !important;   /* основной отступ — подбери 1.2–2.0rem */
+}
+
+/* Или ещё более точный и надёжный вариант (работает почти всегда) */
+.md-nav__item .md-nav__item .md-nav__item > .md-nav__link {
+  padding-left: 2.4rem;              /* 2.4rem даёт хороший "дерево"-вид */
+}
+
+/* Опционально: убрать лишний отступ у иконки/чекбокса */
+.md-nav__item--nested > .md-nav__link {
+  padding-left: 1rem;
+}
+
+
+/* УБИРАЕМ ДУБЛИРУЮЩИЙСЯ ЗАГОЛОВОК В САЙДБАРЕ ПРИ navigation.tabs — НАВСЕГДА */
+.md-sidebar--primary .md-nav__title {
+  display: none !important;
+}

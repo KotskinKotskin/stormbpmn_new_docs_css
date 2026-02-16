@@ -208,14 +208,18 @@ html {
 
 /* Стили для тегов (если плагин tags настроен) */
 .md-tag {
-  background: var(--gradient-primary);
+  background: var(--gradient-primary) !important;
   color: white;
-  padding: 2px 8px;
-  border-radius: 12px;
-  font-size: 0.75rem;
+  padding: 0.25em 0.65em;
+  border-radius: 1rem;
+  font-size: 0.72rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.04em;
+  box-shadow: 0 1px 4px rgba(99, 102, 241, 0.25);
+  transition: all 0.25s ease;
+  display: inline-block;
+  line-height: 1.4;
 }
 
 /* Улучшение поиска */

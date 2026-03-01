@@ -207,9 +207,9 @@ html {
 }
 
 /* Стили для тегов (если плагин tags настроен) */
-.md-tag {
+.md-typeset .md-tag {
   background: var(--gradient-primary) !important;
-  color: white;
+  color: white !important;
   padding: 0.25em 0.65em;
   border-radius: 1rem;
   font-size: 0.72rem;
@@ -359,7 +359,7 @@ html {
 
 /* Стиль для выделенного текста */
 .md-typeset mark {
-  background: linear-gradient(to right, rgba(99, 102, 241, 0.2), rgba(118, 75, 162, 0.2));
+  background: linear-gradient(to right, rgba(99, 102, 241, 0.2), rgba(118, 75, 162, 0.2)) !important; 
   padding: 0.1em 0.3em;
   border-radius: 3px;
 }
@@ -430,4 +430,17 @@ html {
 
 .admonition-container:has(> :nth-child(3):last-child) > :nth-child(3) {
   grid-column: 1 / -1;           /* третий занимает оба столбца */
+}
+
+.blue-toggle {
+  color: #007aff;
+  font-size: 1.3em;      /* подгони размер под текст */
+  vertical-align: -0.15em; /* выравнивание по baseline */
+}
+
+.md-label {
+  padding: 0.2em 0.5em;
+  border-radius: 1em;
+  font-size: 0.8em;
+  margin-left: 0.5em;
 }

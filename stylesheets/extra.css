@@ -1,4 +1,4 @@
-@import url("https://raw.githubusercontent.com/bpmn-io/bpmn-font/refs/heads/main/dist/css/bpmn.css");
+@import url("bpmn.css");
 /* Дополнительные стили для StormBPMN Documentation */
 
 /* Переопределение цветов Material for MkDocs */
